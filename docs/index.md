@@ -1,8 +1,8 @@
 # 📚 Actividad Unidad 0 - DevSecOps Básico y Automatización de la Documentación
 
 **Autor:** Ruben Garcia
-**Repositorio:** [Pega aquí la URL de tu repositorio de GitHub]
-**Página publicada:** [Pega aquí la URL de GitHub Pages (la tendrás en la Fase 3)]
+**Repositorio:** https://github.com/rgarciar19/PPS-Unidad0-Tarea-Ruben_Garcia
+**Página publicada:** https://rgarciar19.github.io/PPS-Unidad0-Tarea-Ruben_Garcia/
 
 ## 🎯 Objetivos de la Tarea
 
