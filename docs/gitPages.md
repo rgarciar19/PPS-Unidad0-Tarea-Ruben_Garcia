@@ -12,6 +12,6 @@ Desde la sección **Settings -> Pages** del repositorio, se configuró la fuente
 
 Tras guardar la configuración, GitHub Pages desplegó automáticamente los archivos. La documentación ahora está accesible públicamente en la siguiente URL, confirmando la finalización exitosa de la automatización:
 
-**URL de la Documentación:** [Pega aquí tu URL de GitHub Pages]
+https://rgarciar19.github.io/PPS-Unidad0-Tarea-Ruben_Garcia/
 
 ![Captura de pantalla de la documentación abierta en el navegador usando la URL publicada](img/documentacion_publicada.png)
