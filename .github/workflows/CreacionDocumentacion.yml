@@ -23,3 +23,43 @@ jobs:
         
       - name: Implementar MkDocs a GitHub Pages
         run: mkdocs gh-deploy --force --clean --message "Build automático desde GitHub Actions"
+name: Publicar Documentacion MkDocs
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+name: Publicar Documentacion MkDocs
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+# AÑADE ESTE BLOQUE DE PERMISOS
+permissions:
+  contents: write # ¡Esto le da permiso de escritura al bot para crear gh-pages!
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+        
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x 
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+        
+      - name: Implementar MkDocs a GitHub Pages
+        run: mkdocs gh-deploy --force --clean --message "Build automático desde GitHub Actions"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Esto es necesario para la autenticación
