@@ -7,6 +7,15 @@ on:
       - master
 
 jobs:
+name: Publicar Documentacion MkDocs
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
@@ -32,6 +41,18 @@ on:
       - master
 
 jobs:
+name: Publicar Documentacion MkDocs
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+# AÑADE ESTE BLOQUE DE PERMISOS
+permissions:
+  contents: write # ¡Esto le da permiso de escritura al bot para crear gh-pages!
+
 name: Publicar Documentacion MkDocs
 
 on:
